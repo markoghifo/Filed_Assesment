@@ -36,25 +36,5 @@ namespace XUnitTestProject
             Assert.True(validationresult);
         }
 
-        //[Fact]
-        //public async Task TestPaymentChannel_Cheap_FailAsync()
-        //{
-        //    var data = new PaymentPostModel() { Amount = 500 };
-        //    var mockCheapRepo = new Mock<ICheapPaymentGateway>();
-        //    mockCheapRepo.Setup(repo => repo.ProcessPayment(data))
-        //        .Returns(PaymentState.failed);
-        //    var mockExpensiveRepo = new Mock<IExpensivePaymentGateway>();
-        //    mockExpensiveRepo.Setup(repo => repo.ProcessPayment(data))
-        //        .Returns(PaymentState.failed);
-        //    var mockPremRepo = new Mock<IPremiumPaymentService>();
-        //    mockPremRepo.Setup(repo => repo.ProcessPayment(data))
-        //        .Returns(PaymentState.failed);
-        //    var mockDbContext = new Mock<IPremiumPaymentService>();
-        //    mockPremRepo.Setup(repo => repo.ProcessPayment(data))
-        //        .Returns(PaymentState.failed);
-        //    var validationresult = await new PaymentRepository()
-        //                                .ProcessPaymentAsync(data);
-        //    Assert.True(validationresult);
-        //}
     }
 }
